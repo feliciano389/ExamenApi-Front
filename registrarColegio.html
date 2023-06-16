@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+     <title>Registrar colegio</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+      
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+      
+        .row {
+            margin-bottom: 20px;
+        }
+      
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+      
+        .btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      
+        .btn:hover {
+            background-color: #45a049;
+        }
+      
+        /* Navbar */
+        nav {
+            background-color: black;
+            padding: 10px;
+        }
+      
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+      
+        nav ul li {
+            display: inline;
+        }
+      
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="listarColegios.html">Colegios</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="nombreColegio" type="text" class="validate" placeholder="Nombre del Colegio">
+                    <label for="nombreColegio">Nombre del Colegio</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="direccion" type="text" class="validate" placeholder="Dirección">
+                    <label for="direccion">Dirección</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="latitud" type="text" class="validate" placeholder="Latitud">
+                    <label for="latitud">Latitud</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="longitud" type="text" class="validate" placeholder="Longitud">
+                    <label for="longitud">Longitud</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="descripcion" type="text" class="validate" placeholder="descripcion">
+                    <label for="descripcion">descripcion</label>
+                </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                        <!-- Dentro del archivo editar.html -->
+                        <button type="button" class="btn waves-effect waves-light" id="btnRegistrar"> Registrar</button>
+                        <a button type="button"  class="btn waves-effect waves-light"  href="listarDatos.html">ver los registros  </button></a>
+        
+        
+        
+                      
+                </div>
+              </div>
+            </form>
+          </div>
+        
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>   
+        
+          <script src="js/funciones.js"></script>
+        </body>
+        </html>
+        
